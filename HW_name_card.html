@@ -40,14 +40,14 @@
       }
 
       .right_triangle {
-        top: 10%;
-        right: -10%;
+        top: -20%;
+        right: -8%;
         z-index: 1;
       }
 
       .left_triangle {
-        bottom: 10%;
-        left: -10%;
+        bottom: -20%;
+        left: -8%;
         z-index: 1;
       }
     </style>
@@ -57,12 +57,15 @@
     <div
       class="container h-100 w-100 d-flex justify-content-center align-items-center position-relative"
     >
-      <div class="d-none d-xl-block position-absolute right_triangle">
-        <img src="./triangle-1.png" alt="" />
-      </div>
       <div
-        class="row red_border rounded flex-column flex-xl-row justify-content-xl-center align-items-xl-center"
+        class="row red_border rounded flex-column flex-xl-row justify-content-xl-center align-items-xl-center position-relative"
       >
+        <div class="d-none d-xl-block position-absolute right_triangle">
+          <img src="./triangle-1.png" alt="" />
+        </div>
+        <div class="d-none d-xl-block position-absolute left_triangle">
+          <img src="./triangle-2.png" alt="" />
+        </div>
         <div class="col col-xl-4">
           <img
             class="img-fluid"
@@ -87,9 +90,6 @@
             咒語：霹靂卡 霹靂拉拉 波波力那貝貝魯多
           </p>
         </div>
-      </div>
-      <div class="d-none d-xl-block position-absolute left_triangle">
-        <img src="./triangle-2.png" alt="" />
       </div>
     </div>
 
